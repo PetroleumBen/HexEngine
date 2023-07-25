@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexMapEngine", "HexMapEngine.csproj", "{94F8C83C-8598-4F3C-9F46-46110C0A38B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexMapEngine.Test", "..\HexMapEngine.Test\HexMapEngine.Test.csproj", "{E338C77C-E136-49E6-B4CA-EE948474BCC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94F8C83C-8598-4F3C-9F46-46110C0A38B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F8C83C-8598-4F3C-9F46-46110C0A38B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F8C83C-8598-4F3C-9F46-46110C0A38B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F8C83C-8598-4F3C-9F46-46110C0A38B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E338C77C-E136-49E6-B4CA-EE948474BCC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E338C77C-E136-49E6-B4CA-EE948474BCC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E338C77C-E136-49E6-B4CA-EE948474BCC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E338C77C-E136-49E6-B4CA-EE948474BCC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {135148CE-BE03-4F86-B392-0AADD520BBC2}
+	EndGlobalSection
+EndGlobal

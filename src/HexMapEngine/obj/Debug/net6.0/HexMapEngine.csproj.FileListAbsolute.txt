@@ -1,0 +1,12 @@
+C:\Users\bengf\source\repos\PetroleumBen\HexEngine\src\HexMapEngine\bin\Debug\net6.0\HexMapEngine.deps.json
+C:\Users\bengf\source\repos\PetroleumBen\HexEngine\src\HexMapEngine\bin\Debug\net6.0\HexMapEngine.dll
+C:\Users\bengf\source\repos\PetroleumBen\HexEngine\src\HexMapEngine\bin\Debug\net6.0\HexMapEngine.pdb
+C:\Users\bengf\source\repos\PetroleumBen\HexEngine\src\HexMapEngine\obj\Debug\net6.0\HexMapEngine.csproj.AssemblyReference.cache
+C:\Users\bengf\source\repos\PetroleumBen\HexEngine\src\HexMapEngine\obj\Debug\net6.0\HexMapEngine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bengf\source\repos\PetroleumBen\HexEngine\src\HexMapEngine\obj\Debug\net6.0\HexMapEngine.AssemblyInfoInputs.cache
+C:\Users\bengf\source\repos\PetroleumBen\HexEngine\src\HexMapEngine\obj\Debug\net6.0\HexMapEngine.AssemblyInfo.cs
+C:\Users\bengf\source\repos\PetroleumBen\HexEngine\src\HexMapEngine\obj\Debug\net6.0\HexMapEngine.csproj.CoreCompileInputs.cache
+C:\Users\bengf\source\repos\PetroleumBen\HexEngine\src\HexMapEngine\obj\Debug\net6.0\HexMapEngine.dll
+C:\Users\bengf\source\repos\PetroleumBen\HexEngine\src\HexMapEngine\obj\Debug\net6.0\refint\HexMapEngine.dll
+C:\Users\bengf\source\repos\PetroleumBen\HexEngine\src\HexMapEngine\obj\Debug\net6.0\HexMapEngine.pdb
+C:\Users\bengf\source\repos\PetroleumBen\HexEngine\src\HexMapEngine\obj\Debug\net6.0\ref\HexMapEngine.dll
