@@ -4,10 +4,15 @@ using System.Numerics;
 namespace HexMapEngine.Test
 {
 
-    public class TestTile 
+    public class TestTile : IHexTile<TestTile>
     {        
         public float OxygenPPM { get; set; } = 0.0f;
+
+        public HexCoords Coords { get; set; }
+
+        public HexMap<TestTile> Map { get; set; } = new HexMap<TestTile>();
     }
+
 
     public class Tests
     {
@@ -22,13 +27,12 @@ namespace HexMapEngine.Test
         {
             HexCoords hexCoord = new HexCoords(0, 0);
 
-            Assert.That(hexCoord + HexDirection.N == new HexCoords(0, 1), "North");
-            Assert.That(hexCoord + HexDirection.NE == new HexCoords(1, 0), "North East");
-            Assert.That(hexCoord + HexDirection.SE == new HexCoords(1, -1), "South Eat");
-            Assert.That(hexCoord + HexDirection.S == new HexCoords(0, -1), "South");
-            Assert.That(hexCoord + HexDirection.SW == new HexCoords(-1, 0), "South West");
-            Assert.That(hexCoord + HexDirection.NW == new HexCoords(-1, 1), "North West");
-
+            Assert.That(hexCoord + HexDirection.N == new HexCoords(0, 1), "Move North");
+            Assert.That(hexCoord + HexDirection.NE == new HexCoords(1, 0), "Move North East");
+            Assert.That(hexCoord + HexDirection.SE == new HexCoords(1, -1), "Move South Eat");
+            Assert.That(hexCoord + HexDirection.S == new HexCoords(0, -1), "Move South");
+            Assert.That(hexCoord + HexDirection.SW == new HexCoords(-1, 0), "Move South West");
+            Assert.That(hexCoord + HexDirection.NW == new HexCoords(-1, 1), "Move North West");
         }
 
 
