@@ -19,6 +19,8 @@ namespace HexMapEngine
 
         public static HexDirection GetDirectionToNeighbour<T>(this T tile, T neighbour) where T : IHexTile<T> => (neighbour.Coords - tile.Coords).ToDirection();
 
+        public static int GetDistanceTo<T>(this T tile, T toTile) where T : IHexTile<T> => tile.Coords.DistanceTo(toTile.Coords);
+
         public static IEnumerable<T> AllNeighbours<T>(this T tile) where T : IHexTile<T> 
         {
             foreach (var direction in HexDirection.N.Loop()) 

@@ -5,7 +5,7 @@ namespace HexMapEngine {
 
     public interface IHexMap 
     {
-        public IEnumerable<IHexTile> AllBaseTiles { get; }
+        IEnumerable<IHexTile> Tiles { get; }
         public bool HasTile(HexCoords coords);
         public IHexTile GetTile(HexCoords coords);
     }
@@ -17,11 +17,11 @@ namespace HexMapEngine {
     public class HexMap<T> : IHexMap where T : IHexTile<T> 
     {
 
-        private Dictionary<HexCoords, T> _tiles = new Dictionary<HexCoords, T>();
+        private Dictionary<HexCoords, T> _tiles = new();
 
-        public IEnumerable<T> AllTiles => _tiles.Values;
+        public IEnumerable<T> Tiles => _tiles.Values;
 
-        public IEnumerable<IHexTile> AllBaseTiles => AllTiles.Cast<IHexTile>();
+        IEnumerable<IHexTile> IHexMap.Tiles => Tiles.Cast<IHexTile>();
         
 
         /// <summary>
@@ -29,17 +29,8 @@ namespace HexMapEngine {
         /// </summary>
         public T this[HexCoords coords]
         {
-            get
-            {
-                if (_tiles.TryGetValue(coords, out var result))
-                    return result;
-
-                return default;
-            }
-            set
-            {
-                _tiles[coords] = value;
-            }
+            get => _tiles.TryGetValue(coords, out var tile) ? tile : default;
+            set => _tiles[coords] = value;
         }
 
 
@@ -51,15 +42,11 @@ namespace HexMapEngine {
 
         public bool TryGetTile<TI>(HexCoords coords, out TI tile) where TI : T
         {
-            if (_tiles.TryGetValue(coords, out T t))
+            if (_tiles.TryGetValue(coords, out T t) && t is TI ti)
             {
-                if (t is TI foundTile)
-                {
-                    tile = foundTile;
-                    return true;
-                }
+                tile = ti;
+                return true;
             }
-
             tile = default;
             return false;
         }
